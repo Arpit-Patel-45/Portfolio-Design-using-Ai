@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Portfolio of Arpit Patel, Technical Trainer & Full Stack Developer. Discover projects, expertise, certifications, and technical training programs.">
+    <meta name="keywords"
+        content="Arpit Patel, Technical Trainer, Full Stack Developer, Portfolio, Web Developer, Coding Mentor, React, Java, Node.js">
+    <meta name="author" content="Arpit Patel">
+    <title>Arpit Patel | Technical Trainer & Senior Full Stack Developer</title>
+
+    <!-- Google Fonts (Poppins & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Custom Glow Cursor Follower -->
+    <div class="cursor-glow" id="customCursor"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Loading Preloader Screen -->
+    <div id="preloader" class="preloader-overlay">
+        <div class="preloader-content text-center">
+            <div class="preloader-spinner mb-3">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring-inner"></div>
+            </div>
+            <h3 class="gradient-text fw-bold text-uppercase tracking-wide">Arpit Patel</h3>
+            <p class="text-muted small">Loading Digital Identity...</p>
+        </div>
+    </div>
+
+    <!-- Background Particles Canvas -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#home" id="brandLogo">
+                    <span class="gradient-text">Arpit Patel</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <!-- Theme Toggle Switch -->
+                            <button id="themeToggleBtn" class="btn theme-toggle-btn" aria-label="Toggle Theme">
+                                <i class="fa-solid fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section d-flex align-items-center min-vh-100 position-relative">
+            <div class="container z-index-1">
+                <div class="row align-items-center min-vh-100 py-5">
+                    <div class="col-lg-5 text-center text-lg-start mb-5 mb-lg-0 order-2 order-lg-1"
+                        data-aos="fade-right" data-aos-duration="1200">
+                        <div class="hero-profile-container mx-auto mx-lg-0">
+                            <div class="profile-glow-ring"></div>
+                            <div class="profile-glow-ring-secondary"></div>
+                            <div class="profile-image-wrapper">
+                                <img src="assets/profile.jpg" alt="Arpit Patel Portrait"
+                                    class="img-fluid profile-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-1 order-lg-2 text-center text-lg-start" data-aos="fade-left"
+                        data-aos-duration="1200">
+                        <div class="hero-text-content ps-lg-4">
+                            <span
+                                class="hero-subtitle text-uppercase tracking-wider text-accent mb-2 d-block fw-bold">Hello,
+                                I'm</span>
+                            <h1 class="hero-title display-3 fw-bold mb-3">Arpit Patel</h1>
+                            <h2 class="hero-typing-subtitle mb-4">
+                                <span class="typed-cursor-parent">I am a <span id="typedElements"
+                                        class="gradient-text-accent"></span></span>
+                            </h2>
+                            <p class="hero-lead text-muted mb-4 lead">
+                                Passionate Technical Trainer and Full Stack Developer dedicated to creating modern web
+                                applications while mentoring aspiring developers with industry-standard practices.
+                            </p>
+                            <div
+                                class="hero-action-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-5">
+                                <a href="assets/resume.pdf" download
+                                    class="btn btn-glow btn-primary-gradient px-4 py-3 fw-semibold">
+                                    <i class="fa-solid fa-download me-2 animate-bounce"></i>Download Resume
+                                </a>
+                                <a href="#contact" class="btn btn-glow btn-outline-glass px-4 py-3 fw-semibold">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+                                </a>
+                            </div>
+                            <div class="hero-social-links d-flex justify-content-center justify-content-lg-start gap-3">
+                                <a href="https://linkedin.com" target="_blank" class="social-icon-btn btn-linkedin"
+                                    aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com" target="_blank" class="social-icon-btn btn-github"
+                                    aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://instagram.com" target="_blank" class="social-icon-btn btn-instagram"
+                                    aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:arpit.patel@example.com" class="social-icon-btn btn-gmail"
+                                    aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon-btn btn-twitter"
+                                    aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <a href="#about" class="scroll-down-btn" aria-label="Scroll to About Section">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow-scroll fa-solid fa-chevron-down"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">About <span class="gradient-text">Me</span></h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+                        <div class="about-card glass-card p-4 p-md-5">
+                            <h3 class="h4 fw-bold mb-4 text-primary-neon"><i
+                                    class="fa-solid fa-user-tie me-2"></i>Professional Biography</h3>
+                            <p class="about-bio text-muted mb-4">
+                                I am an enthusiastic Technical Trainer and accomplished Full Stack Developer with 5+
+                                years of professional industry experience. Working inside a leading Professional IT
+                                Company, my dual focus is coding highly performant, accessible web systems and
+                                delivering cutting-edge software engineering curricula to the next generation of
+                                engineers.
+                            </p>
+                            <p class="about-bio text-muted mb-4">
+                                My approach combines rigorous theory with hands-on practice, empowering students to
+                                deploy production-ready applications. My career goal remains helping businesses build
+                                robust digital interfaces while continuously elevating training standards in the modern
+                                tech ecosystem.
+                            </p>
+                            <div class="row g-3 about-meta-info">
+                                <div class="col-sm-6">
+                                    <div class="meta-item d-flex align-items-center gap-3">
+                                        <div class="meta-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                        <div>
+                                            <span class="meta-label d-block text-muted small">Current Role</span>
+                                            <span class="meta-value fw-semibold text-white">Technical Trainer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="meta-item d-flex align-items-center gap-3">
+                                        <div class="meta-icon"><i class="fa-solid fa-building"></i></div>
+                                        <div>
+                                            <span class="meta-label d-block text-muted small">Employer</span>
+                                            <span class="meta-value fw-semibold text-white">Professional IT
+                                                Company</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="meta-item d-flex align-items-center gap-3">
+                                        <div class="meta-icon"><i class="fa-solid fa-heart"></i></div>
+                                        <div>
+                                            <span class="meta-label d-block text-muted small">Core Passion</span>
+                                            <span class="meta-value fw-semibold text-white">Mentorship &
+                                                Development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="meta-item d-flex align-items-center gap-3">
+                                        <div class="meta-icon"><i class="fa-solid fa-bullseye"></i></div>
+                                        <div>
+                                            <span class="meta-label d-block text-muted small">Goal</span>
+                                            <span class="meta-value fw-semibold text-white">Empower Innovators</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                        <div class="about-stats-grid row g-4 text-center">
+                            <div class="col-6">
+                                <div class="stat-counter-card glass-card p-4">
+                                    <div class="stat-icon-wrapper mb-3 text-primary-neon mx-auto">
+                                        <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                                    </div>
+                                    <h4 class="stat-number display-6 fw-bold mb-1 gradient-text" data-target="5">0</h4>
+                                    <p class="stat-label text-muted small mb-0 text-uppercase tracking-wider">Years
+                                        Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-counter-card glass-card p-4">
+                                    <div class="stat-icon-wrapper mb-3 text-secondary-neon mx-auto">
+                                        <i class="fa-solid fa-laptop-code fa-2x"></i>
+                                    </div>
+                                    <h4 class="stat-number display-6 fw-bold mb-1 gradient-text-secondary"
+                                        data-target="100">0</h4>
+                                    <p class="stat-label text-muted small mb-0 text-uppercase tracking-wider">Projects
+                                        Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-counter-card glass-card p-4">
+                                    <div class="stat-icon-wrapper mb-3 text-accent-neon mx-auto">
+                                        <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                                    </div>
+                                    <h4 class="stat-number display-6 fw-bold mb-1 gradient-text-accent"
+                                        data-target="500">0</h4>
+                                    <p class="stat-label text-muted small mb-0 text-uppercase tracking-wider">Students
+                                        Trained</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-counter-card glass-card p-4">
+                                    <div class="stat-icon-wrapper mb-3 text-primary-neon mx-auto">
+                                        <i class="fa-solid fa-cubes fa-2x"></i>
+                                    </div>
+                                    <h4 class="stat-number display-6 fw-bold mb-1 gradient-text" data-target="25">0</h4>
+                                    <p class="stat-label text-muted small mb-0 text-uppercase tracking-wider">
+                                        Technologies Mastered</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">My <span class="gradient-text">Skills</span></h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Frontend Skills -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skills-category-card glass-card p-4 h-100">
+                            <h3 class="category-title h5 fw-bold mb-4 text-primary-neon d-flex align-items-center">
+                                <i class="fa-solid fa-display me-2"></i>Frontend Development
+                            </h3>
+                            <div class="skills-list d-flex flex-column gap-3">
+                                <!-- HTML5 -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-html5 text-orange me-2"></i>HTML5</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">95%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <!-- CSS3 -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-css3-alt text-blue me-2"></i>CSS3</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">90%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- Bootstrap -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-bootstrap text-purple me-2"></i>Bootstrap 5</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">95%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <!-- Tailwind CSS -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-wind text-teal me-2"></i>Tailwind CSS</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">90%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- JavaScript -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-js text-yellow me-2"></i>JavaScript (ES6+)</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">92%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="92%"></div>
+                                    </div>
+                                </div>
+                                <!-- React -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-react text-cyan me-2"></i>React.js</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">88%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <!-- NextJS -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-n text-white me-2"></i>Next.js</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">85%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <!-- VueJS -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-vuejs text-green me-2"></i>Vue.js</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">80%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skills-category-card glass-card p-4 h-100">
+                            <h3 class="category-title h5 fw-bold mb-4 text-secondary-neon d-flex align-items-center">
+                                <i class="fa-solid fa-server me-2"></i>Backend Development
+                            </h3>
+                            <div class="skills-list d-flex flex-column gap-3">
+                                <!-- Node JS -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-node-js text-green me-2"></i>Node.js</span>
+                                        <span class="skill-percentage fw-semibold text-secondary-neon">88%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-secondary">
+                                        <div class="progress-fill" style="width: 0%" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <!-- Express JS -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-code text-muted me-2"></i>Express.js</span>
+                                        <span class="skill-percentage fw-semibold text-secondary-neon">90%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-secondary">
+                                        <div class="progress-fill" style="width: 0%" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- PHP -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-php text-indigo me-2"></i>PHP</span>
+                                        <span class="skill-percentage fw-semibold text-secondary-neon">85%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-secondary">
+                                        <div class="progress-fill" style="width: 0%" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <!-- Java -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-java text-orange me-2"></i>Java</span>
+                                        <span class="skill-percentage fw-semibold text-secondary-neon">92%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-secondary">
+                                        <div class="progress-fill" style="width: 0%" data-width="92%"></div>
+                                    </div>
+                                </div>
+                                <!-- Python -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-python text-blue me-2"></i>Python</span>
+                                        <span class="skill-percentage fw-semibold text-secondary-neon">85%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-secondary">
+                                        <div class="progress-fill" style="width: 0%" data-width="85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skills-category-card glass-card p-4 h-100">
+                            <h3 class="category-title h5 fw-bold mb-4 text-accent-neon d-flex align-items-center">
+                                <i class="fa-solid fa-database me-2"></i>Database Technologies
+                            </h3>
+                            <div class="skills-list d-flex flex-column gap-3">
+                                <!-- MySQL -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-database text-blue me-2"></i>MySQL</span>
+                                        <span class="skill-percentage fw-semibold text-accent-neon">90%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-accent">
+                                        <div class="progress-fill" style="width: 0%" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- MongoDB -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-leaf text-green me-2"></i>MongoDB</span>
+                                        <span class="skill-percentage fw-semibold text-accent-neon">85%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-accent">
+                                        <div class="progress-fill" style="width: 0%" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <!-- Firebase -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-fire text-orange me-2"></i>Firebase</span>
+                                        <span class="skill-percentage fw-semibold text-accent-neon">88%</span>
+                                    </div>
+                                    <div class="progress-bar-glow bar-accent">
+                                        <div class="progress-fill" style="width: 0%" data-width="88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Tools -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skills-category-card glass-card p-4 h-100">
+                            <h3 class="category-title h5 fw-bold mb-4 text-primary-neon d-flex align-items-center">
+                                <i class="fa-solid fa-toolbox me-2"></i>Development Tools
+                            </h3>
+                            <div class="skills-list d-flex flex-column gap-3">
+                                <!-- Git -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-git-alt text-orange me-2"></i>Git</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">92%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="92%"></div>
+                                    </div>
+                                </div>
+                                <!-- GitHub -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-github text-white me-2"></i>GitHub</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">90%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <!-- VS Code -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-laptop-code text-cyan me-2"></i>VS Code</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">95%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <!-- Figma -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-figma text-pink me-2"></i>Figma</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">80%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <!-- Postman -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-solid fa-space-shuttle text-orange me-2"></i>Postman</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">88%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <!-- Docker -->
+                                <div class="skill-item">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name fw-medium"><i
+                                                class="fa-brands fa-docker text-blue me-2"></i>Docker</span>
+                                        <span class="skill-percentage fw-semibold text-primary-neon">78%</span>
+                                    </div>
+                                    <div class="progress-bar-glow">
+                                        <div class="progress-fill" style="width: 0%" data-width="78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">Work <span class="gradient-text">Experience</span>
+                    </h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <div class="timeline-container position-relative mx-auto">
+                    <!-- Central Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
+                        <div class="timeline-dot-wrapper d-none d-md-block">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-card glass-card p-4 ms-md-4 flex-grow-1">
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold text-primary-neon mb-1">Technical Trainer</h3>
+                                    <h4 class="h6 text-muted mb-0"><i
+                                            class="fa-regular fa-building me-1"></i>Professional IT Company</h4>
+                                </div>
+                                <span
+                                    class="timeline-badge bg-primary-neon text-dark fw-bold px-3 py-1 rounded-pill mt-2 mt-sm-0">2021
+                                    - Present</span>
+                            </div>
+                            <p class="timeline-intro text-muted mb-3 font-italic">
+                                Responsible for shaping the development skills of hundreds of aspiring engineers and
+                                current trainees using production-level modern tech frameworks.
+                            </p>
+                            <h5 class="h6 fw-semibold text-white mb-2"><i
+                                    class="fa-solid fa-list-check text-accent me-2"></i>Core Responsibilities:</h5>
+                            <ul class="timeline-list text-muted ps-3 mb-0">
+                                <li>Training students and new company hires in enterprise Full Stack development
+                                    architectures.</li>
+                                <li>Teaching modern software patterns (HTML5, CSS3, ES6+, Bootstrap, React, Java,
+                                    NodeJS, Databases).</li>
+                                <li>Conducting live coding sessions, whiteboarding algorithms, and debugging clinics.
+                                </li>
+                                <li>Mentoring capstone industry-simulated team projects and providing architecture
+                                    evaluations.</li>
+                                <li>Conducting tech career coaching sessions, mock portfolio reviews, and technical
+                                    interview preparation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="timeline-dot-wrapper d-none d-md-block">
+                            <div class="timeline-dot dot-secondary"></div>
+                        </div>
+                        <div class="timeline-content-card glass-card p-4 ms-md-4 flex-grow-1">
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold text-secondary-neon mb-1">Senior Software Engineer</h3>
+                                    <h4 class="h6 text-muted mb-0"><i class="fa-regular fa-building me-1"></i>Web
+                                        Solutions Inc.</h4>
+                                </div>
+                                <span
+                                    class="timeline-badge bg-secondary-neon text-white fw-bold px-3 py-1 rounded-pill mt-2 mt-sm-0">2018
+                                    - 2021</span>
+                            </div>
+                            <p class="timeline-intro text-muted mb-3">
+                                Directed engineering development on major client web apps while setting standards for
+                                layout styling and responsiveness.
+                            </p>
+                            <h5 class="h6 fw-semibold text-white mb-2"><i
+                                    class="fa-solid fa-list-check text-accent me-2"></i>Key Contributions:</h5>
+                            <ul class="timeline-list text-muted ps-3 mb-0">
+                                <li>Architected modular web applications using React.js, Express.js, and Java Spring.
+                                </li>
+                                <li>Engineered reusable custom UI component systems across multiple projects.</li>
+                                <li>Optimized database search indices and REST API endpoints, boosting load speeds by
+                                    30%.</li>
+                                <li>Supervised a junior development team of 4, running code reviews and deployment
+                                    sprints.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">Featured <span
+                            class="gradient-text">Projects</span></h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1: Portfolio Website -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/portfolio.jpg" alt="Portfolio Website Project Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">Portfolio Website</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    A premium professional web presence built with responsive components, cursor glows,
+                                    and high-fidelity animations.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-primary-neon bg-glass-tag">HTML5</span>
+                                    <span class="badge text-primary-neon bg-glass-tag">Bootstrap 5</span>
+                                    <span class="badge text-primary-neon bg-glass-tag">GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-Commerce Website -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/ecommerce.jpg" alt="E-Commerce Project Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">E-Commerce Website</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    An enterprise digital storefront integrating real-time cart states, Stripe payments,
+                                    and a dashboard for stock administrators.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-secondary-neon bg-glass-tag">React</span>
+                                    <span class="badge text-secondary-neon bg-glass-tag">Node.js</span>
+                                    <span class="badge text-secondary-neon bg-glass-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Hospital Management System -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/hospital.jpg" alt="Hospital Management System Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">Hospital Management System</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    A secure health web tool facilitating patient intake, physician schedules, billing
+                                    procedures, and diagnosis logs.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-accent-neon bg-glass-tag">Java</span>
+                                    <span class="badge text-accent-neon bg-glass-tag">Spring Boot</span>
+                                    <span class="badge text-accent-neon bg-glass-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Student Management System -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/student.jpg" alt="Student Management System Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">Student Management System</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    An academic tracking platform managing course selections, GPA algorithms, attendance
+                                    charts, and report generation.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-primary-neon bg-glass-tag">Python</span>
+                                    <span class="badge text-primary-neon bg-glass-tag">Django</span>
+                                    <span class="badge text-primary-neon bg-glass-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Learning Management System -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/lms.jpg" alt="Learning Management System Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">Learning Management System</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    A virtual education interface providing online exams, homework uploads, direct
+                                    student chat rooms, and video courses.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-secondary-neon bg-glass-tag">Next.js</span>
+                                    <span class="badge text-secondary-neon bg-glass-tag">Express</span>
+                                    <span class="badge text-secondary-neon bg-glass-tag">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Responsive Business Website -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper position-relative">
+                                <img src="assets/business.jpg" alt="Responsive Business Website Preview"
+                                    class="img-fluid project-img">
+                                <div class="project-overlay d-flex align-items-center justify-content-center">
+                                    <div class="overlay-buttons d-flex gap-2">
+                                        <a href="#" class="btn btn-sm btn-glow btn-primary-gradient"
+                                            aria-label="View Live Project Demo"><i class="fa-solid fa-link"></i> Live
+                                            Demo</a>
+                                        <a href="https://github.com" target="_blank"
+                                            class="btn btn-sm btn-glow btn-outline-glass"
+                                            aria-label="View Project Source Code"><i class="fa-brands fa-github"></i>
+                                            GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details p-4 flex-grow-1 d-flex flex-column">
+                                <h3 class="h5 fw-bold text-white mb-2">Responsive Business Website</h3>
+                                <p class="project-description text-muted small flex-grow-1 mb-3">
+                                    A dynamic agency landing page utilizing custom layout parameters, layout
+                                    transitions, and form validation schemes.
+                                </p>
+                                <div class="project-tech-badges mt-auto">
+                                    <span class="badge text-accent-neon bg-glass-tag">Vue.js</span>
+                                    <span class="badge text-accent-neon bg-glass-tag">Tailwind CSS</span>
+                                    <span class="badge text-accent-neon bg-glass-tag">Vite</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">My <span class="gradient-text">Services</span></h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Service 1: Full Stack Development -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-code"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Full Stack Development</h3>
+                            <p class="service-text text-muted small">
+                                Complete development of backend architectures, frontend layouts, and dynamic routing
+                                components.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Website Design -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-palette"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Website Design</h3>
+                            <p class="service-text text-muted small">
+                                Structuring elegant layouts, premium color schemes, and visual styles matching user
+                                identity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Web Application Development -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-cubes-stacked"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Web App Development</h3>
+                            <p class="service-text text-muted small">
+                                Custom development of highly interactive single page interfaces and real-time backend
+                                systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Technical Training -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-chalkboard-user"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Technical Training</h3>
+                            <p class="service-text text-muted small">
+                                In-depth professional development bootcamps across modern programming patterns and
+                                methodologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Coding Mentorship -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-people-group"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Coding Mentorship</h3>
+                            <p class="service-text text-muted small">
+                                One-on-one session code reviews, debugging support, architecture planning, and technical
+                                reviews.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: UI/UX Design -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <h3 class="h5 fw-bold mb-2">UI/UX Design</h3>
+                            <p class="service-text text-muted small">
+                                Interface prototyping, layouts, custom interactive assets, and screen component
+                                behaviors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 7: Career Guidance -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-compass"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Career Guidance</h3>
+                            <p class="service-text text-muted small">
+                                Mentorship on resumes, professional profiles, job search strategies, and coding
+                                interviews.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 8: Project Assistance -->
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="service-card glass-card text-center p-4">
+                            <div class="service-icon mb-3"><i class="fa-solid fa-circle-question"></i></div>
+                            <h3 class="h5 fw-bold mb-2">Project Assistance</h3>
+                            <p class="service-text text-muted small">
+                                Structuring workflow components, fixing performance bottlenecks, and configuring
+                                deployment packages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">Certifications</h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <!-- Swiper Certification Slider -->
+                <div class="swiper certificationsSwiper pb-5" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- Cert 1 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Full Stack Development</h3>
+                                <p class="cert-org text-muted mb-3">Enterprise Tech Institute</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                        <!-- Cert 2 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-solid fa-code"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Web Development</h3>
+                                <p class="cert-org text-muted mb-3">Global Coding Alliance</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                        <!-- Cert 3 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-brands fa-java"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Java Programming</h3>
+                                <p class="cert-org text-muted mb-3">Oracle Certified Professional</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                        <!-- Cert 4 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-brands fa-python"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Python Expert</h3>
+                                <p class="cert-org text-muted mb-3">Python Software Foundation</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                        <!-- Cert 5 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-solid fa-database"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Database Administrator</h3>
+                                <p class="cert-org text-muted mb-3">Database Tech Syndicate</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                        <!-- Cert 6 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="certification-card glass-card p-4 text-center h-100 d-flex flex-column align-items-center">
+                                <div class="cert-icon-wrapper mb-3"><i class="fa-solid fa-cloud"></i></div>
+                                <h3 class="h5 fw-bold text-white mb-2">Cloud Computing</h3>
+                                <p class="cert-org text-muted mb-3">Amazon Web Services Academy</p>
+                                <span class="badge text-primary-neon bg-glass-tag mt-auto">Credentials Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper Controls -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-nav-btn"></div>
+                    <div class="swiper-button-prev swiper-nav-btn"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">Reviews & <span
+                            class="gradient-text">Testimonials</span></h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <!-- Swiper Testimonial Slider -->
+                <div class="swiper testimonialsSwiper pb-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card p-5 text-center position-relative">
+                                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial-text text-muted mb-4 lead font-italic">
+                                    "Arpit is an incredible coding mentor. His Full Stack lessons are structured,
+                                    interactive, and cover clear enterprise standards. Thanks to his training program, I
+                                    landed a junior engineering job at my dream tech firm!"
+                                </p>
+                                <div class="rating-stars mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <h3 class="h6 fw-bold text-white mb-1">Rohan Sharma</h3>
+                                <span class="test-role text-accent small">Full Stack Trainee</span>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card p-5 text-center position-relative">
+                                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial-text text-muted mb-4 lead font-italic">
+                                    "As a training supervisor, Arpit demonstrated elite development knowledge and
+                                    communication skills. His teaching styles boosted our onboarding speed, producing
+                                    highly autonomous trainee contributions."
+                                </p>
+                                <div class="rating-stars mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <h3 class="h6 fw-bold text-white mb-1">Pooja Verma</h3>
+                                <span class="test-role text-accent small">HR Manager, Professional IT Company</span>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card glass-card p-5 text-center position-relative">
+                                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                                <p class="testimonial-text text-muted mb-4 lead font-italic">
+                                    "Working with Arpit on web projects was highly seamless. He structured the API
+                                    architecture efficiently and guided our team through challenging backend
+                                    synchronization problems with extreme care."
+                                </p>
+                                <div class="rating-stars mb-3">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <h3 class="h6 fw-bold text-white mb-1">Amit Patel</h3>
+                                <span class="test-role text-accent small">Contract Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper Controls -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-nav-btn"></div>
+                    <div class="swiper-button-prev swiper-nav-btn"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Ribbon Section -->
+        <section id="statistics-ribbon"
+            class="statistics-ribbon py-5 bg-gradient-dark border-top border-bottom border-dark position-relative">
+            <div class="container">
+                <div class="row text-center g-4 justify-content-center">
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="stat-number display-5 fw-bold gradient-text" data-target="100">0</h3>
+                        <p class="stat-label text-muted text-uppercase tracking-wider small mb-0">Projects Completed</p>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="stat-number display-5 fw-bold gradient-text-secondary" data-target="500">0</h3>
+                        <p class="stat-label text-muted text-uppercase tracking-wider small mb-0">Students Trained</p>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="stat-number display-5 fw-bold gradient-text-accent" data-target="5">0</h3>
+                        <p class="stat-label text-muted text-uppercase tracking-wider small mb-0">Years Experience</p>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="stat-number display-5 fw-bold gradient-text" data-target="100">0</h3>
+                        <p class="stat-label text-muted text-uppercase tracking-wider small mb-0">Satisfaction Rate %
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section py-5 section-padding position-relative">
+            <div class="container">
+                <div class="section-header text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title display-5 fw-bold mb-2">Get In <span class="gradient-text">Touch</span>
+                    </h2>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Left: Contact Details and Map -->
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-info-card glass-card p-4 p-md-5 h-100 d-flex flex-column">
+                            <h3 class="h4 fw-bold mb-4 text-primary-neon"><i
+                                    class="fa-solid fa-circle-info me-2"></i>Contact Info</h3>
+
+                            <div class="contact-details-list d-flex flex-column gap-4 mb-5">
+                                <div class="contact-detail-item d-flex align-items-center gap-3">
+                                    <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div>
+                                        <span class="detail-label d-block text-muted small">Mail Me</span>
+                                        <a href="mailto:arpit.patel@example.com"
+                                            class="detail-value fw-semibold text-white text-decoration-none">arpit.patel@example.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-detail-item d-flex align-items-center gap-3">
+                                    <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div>
+                                        <span class="detail-label d-block text-muted small">Call Me</span>
+                                        <a href="tel:+1234567890"
+                                            class="detail-value fw-semibold text-white text-decoration-none">+123 456
+                                            7890</a>
+                                    </div>
+                                </div>
+                                <div class="contact-detail-item d-flex align-items-center gap-3">
+                                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <span class="detail-label d-block text-muted small">Location</span>
+                                        <span class="detail-value fw-semibold text-white">Gujarat, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Styled Google Map Container -->
+                            <div class="map-iframe-container rounded overflow-hidden mt-auto">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117348.66597793444!2d72.50853755353112!3d23.022505030248443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fccd11d087798c9!2sAhmedabad%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                    width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" id="mapWidget"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+                        <div class="contact-form-card glass-card p-4 p-md-5">
+                            <h3 class="h4 fw-bold mb-4 text-secondary-neon"><i
+                                    class="fa-regular fa-paper-plane me-2"></i>Send Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating-custom">
+                                            <input type="text" class="form-control-custom" id="formName" placeholder=" "
+                                                required>
+                                            <label for="formName" class="form-label-custom">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating-custom">
+                                            <input type="email" class="form-control-custom" id="formEmail"
+                                                placeholder=" " required>
+                                            <label for="formEmail" class="form-label-custom">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating-custom">
+                                            <input type="tel" class="form-control-custom" id="formPhone"
+                                                placeholder=" ">
+                                            <label for="formPhone" class="form-label-custom">Phone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating-custom">
+                                            <input type="text" class="form-control-custom" id="formSubject"
+                                                placeholder=" " required>
+                                            <label for="formSubject" class="form-label-custom">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating-custom">
+                                            <textarea class="form-control-custom" id="formMessage" rows="5"
+                                                placeholder=" " required></textarea>
+                                            <label for="formMessage" class="form-label-custom">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit"
+                                            class="btn btn-glow btn-secondary-gradient w-100 py-3 fw-bold">
+                                            <i class="fa-solid fa-paper-plane me-2"></i>Send Secure Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5 position-relative">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <a class="footer-brand h4 fw-bold text-uppercase text-decoration-none mb-3 d-inline-block"
+                        href="#home">
+                        <span class="gradient-text">Arpit Patel</span>
+                    </a>
+                    <p class="footer-desc text-muted small mb-4">
+                        Senior Full Stack Engineer and Professional IT Technical Trainer helping students and companies
+                        develop elite software interfaces.
+                    </p>
+                    <div class="footer-social-links d-flex gap-2">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon-btn btn-sm"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank" class="social-icon-btn btn-sm"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon-btn btn-sm"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:arpit.patel@example.com" class="social-icon-btn btn-sm" aria-label="Gmail"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon-btn btn-sm"
+                            aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 ps-md-5">
+                    <h4 class="h6 text-white text-uppercase tracking-wider fw-bold mb-3">Quick Links</h4>
+                    <ul class="footer-links-list list-unstyled d-flex flex-column gap-2 text-muted small">
+                        <li><a href="#home" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Home</a></li>
+                        <li><a href="#about" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>About</a></li>
+                        <li><a href="#skills" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Skills</a></li>
+                        <li><a href="#experience" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Experience</a></li>
+                        <li><a href="#projects" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <h4 class="h6 text-white text-uppercase tracking-wider fw-bold mb-3">Services</h4>
+                    <ul class="footer-links-list list-unstyled d-flex flex-column gap-2 text-muted small">
+                        <li><a href="#services" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Full Stack Dev</a></li>
+                        <li><a href="#services" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Website Design</a></li>
+                        <li><a href="#services" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Technical Training</a></li>
+                        <li><a href="#services" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Coding Mentorship</a></li>
+                        <li><a href="#services" class="footer-link"><i
+                                    class="fa-solid fa-chevron-right me-1 small"></i>Career Guidance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="footer-bottom-bar border-top border-dark pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+                <p class="copyright-text mb-0">&copy; <span id="currentYear">2026</span> Arpit Patel. All rights
+                    reserved.</p>
+                <p class="design-credit-text mb-0">Designed by <span class="gradient-text fw-bold">Antigravity</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll back to top of page">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- GSAP (GreenSock) CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <!-- AOS (Animate on Scroll) JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
